@@ -1,0 +1,192 @@
+.focus-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 32, 96, 0.3);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.focus-modal {
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  background: white;
+  border-radius: 28px;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0, 32, 96, 0.25);
+}
+
+.modal-main {
+  background: var(--bg-clinical);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Crucial for scrolling in flex */
+}
+
+.modal-header {
+  padding: 25px 35px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-weight: 800;
+  color: var(--sidebar-navy);
+  font-size: 1.3rem;
+}
+
+.search-container, .cart-search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input, .cart-search-input {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: #f8fafc;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-icon, .cart-search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.modal-body {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto; 
+  min-height: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--active-teal) #f1f5f9;
+}
+
+/* CUSTOM SCROLLBARS */
+.modal-body::-webkit-scrollbar, .cart-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track, .cart-items::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb, .cart-items::-webkit-scrollbar-thumb {
+  background: var(--active-teal);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover, .cart-items::-webkit-scrollbar-thumb:hover {
+  background: var(--sidebar-navy);
+}
+
+/* TREE UI */
+.tree-node { margin-bottom: 12px; }
+.node-header { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 14px; cursor: pointer; transition: all 0.2s; font-weight: 700; }
+.node-header.major { background: #f0f4f8; color: var(--sidebar-navy); border: 1px solid #d1d9e6; font-size: 1rem; }
+.node-header.master { margin-left: 20px; background: white; border: 1px solid var(--border-subtle); font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
+.node-header.sub { margin-left: 50px; font-size: 0.85rem; color: var(--text-secondary); padding: 8px 12px; font-weight: 600; }
+
+/* CART (RIGHT) */
+.modal-cart {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cart-header {
+  padding: 25px 35px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: white;
+  flex-shrink: 0;
+}
+
+.cart-items {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background: #fafbfc;
+}
+
+.preview-traits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.cart-item {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.add-all-btn {
+  background: var(--active-teal-soft);
+  color: var(--active-teal);
+  border: 1px solid var(--active-teal);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.trait-add-btn, .trait-remove-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  border: 1px solid #e2e8f0;
+}
+
+.trait-add-btn { background: #f1f5f9; color: var(--sidebar-navy); }
+.trait-remove-btn { background: transparent; color: #ef4444; border: none; font-size: 1.2rem; }
+
+.modal-footer {
+  padding: 25px 35px;
+  border-top: 1px solid var(--border-subtle);
+  background: white;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: var(--sidebar-navy);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}

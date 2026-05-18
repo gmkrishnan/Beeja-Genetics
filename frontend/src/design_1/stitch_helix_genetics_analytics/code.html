@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Seq-Alpha-77X Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#006f66",
+                        "primary": "#00288e",
+                        "background": "#fbf8ff",
+                        "tertiary-fixed-dim": "#fbabff",
+                        "surface-dim": "#dad9e3",
+                        "outline": "#757684",
+                        "surface-container-highest": "#e3e1eb",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001453",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#5e006c",
+                        "primary-fixed-dim": "#b8c4ff",
+                        "inverse-surface": "#2f3037",
+                        "on-primary-container": "#a8b8ff",
+                        "on-tertiary-fixed": "#36003e",
+                        "outline-variant": "#c4c5d5",
+                        "secondary-container": "#86f2e4",
+                        "surface-bright": "#fbf8ff",
+                        "surface": "#fbf8ff",
+                        "secondary-fixed": "#89f5e7",
+                        "primary-container": "#1e40af",
+                        "surface-container-high": "#e8e7f1",
+                        "surface-container": "#eeedf7",
+                        "on-primary-fixed-variant": "#173bab",
+                        "on-background": "#1a1b22",
+                        "tertiary-fixed": "#ffd6fd",
+                        "on-tertiary-container": "#f799ff",
+                        "inverse-on-surface": "#f1f0fa",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#b8c4ff",
+                        "tertiary-container": "#830096",
+                        "primary-fixed": "#dde1ff",
+                        "surface-tint": "#3755c3",
+                        "on-secondary-fixed-variant": "#005049",
+                        "on-surface": "#1a1b22",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#00201d",
+                        "on-tertiary-fixed-variant": "#7c008e",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#444653",
+                        "secondary": "#006a61",
+                        "surface-variant": "#e3e1eb",
+                        "surface-container-low": "#f4f2fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "container-max": "1440px",
+                        "gutter": "16px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Geist"],
+                        "data-mono": ["JetBrains Mono"],
+                        "headline-sm": ["Geist"],
+                        "display-lg": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "headline-lg-mobile": ["Geist"],
+                        "headline-lg": ["Geist"],
+                        "headline-md": ["Geist"],
+                        "label-caps": ["Geist"]
+                    },
+                    "fontSize": {
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "data-mono": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .nucl-a { background-color: #fbbf24; color: #78350f; } /* Amber */
+        .nucl-t { background-color: #f0abfc; color: #701a75; } /* Magenta */
+        .nucl-c { background-color: #3b82f6; color: #ffffff; } /* Cobalt */
+        .nucl-g { background-color: #2dd4bf; color: #115e59; } /* Teal */
+        
+        /* Custom scrollbar for sequence viewer */
+        .seq-scroll::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+        .seq-scroll::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        .seq-scroll::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .seq-scroll::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md h-screen flex overflow-hidden">
+<!-- SideNavBar -->
+<nav class="bg-surface-container-low text-primary flex flex-col h-screen py-gutter px-4 docked full-height left-0 w-64 border-r border-outline-variant flat no shadows hidden md:flex shrink-0">
+<div class="mb-8 flex items-center gap-3">
+<img alt="Genomic Insight Logo" class="w-10 h-10 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXG76oIx1os7m-whj7G7XNuPP0_uNrp8bwmpytj5_uigUjwHNLj8TvNaZlOsvGokDPB3HauEev-3lHB2qbcyec0ImL2fbuZ5G5Z0AR5DUzNrr0k4ho8_UHDS7JVIqNNoH1psNK2exr-01D6YUcxQQt5-jwNCeNVt8w_DjMkbq6F14Y6Z4CoX-aX6dUjg9LiocrgfE8Cwc2--ymCIjOcikckbKqmhK2hJWO_2M2GLg4zrhOEIcToSCIcrOlWQNPLMT1ZCFIIQ9qPnc"/>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-black text-primary">Genomic Insight</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Precision Analysis</p>
+</div>
+</div>
+<button class="mb-8 w-full bg-primary text-on-primary py-2 px-4 rounded-lg font-body-md text-body-md font-medium hover:bg-surface-tint transition-colors flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+            New Analysis
+        </button>
+<div class="flex-1 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="analytics">analytics</span>
+<span class="font-body-md text-body-md">Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-secondary-container text-on-secondary-container transition-all scale-[0.98] duration-200" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="dna">Dna</span>
+<span class="font-body-md text-body-md font-medium">Sequences</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="compare">compare</span>
+<span class="font-body-md text-body-md">Comparison</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-highest transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="description">description</span>
+<span class="font-body-md text-body-md">Reports</span>
+</a>
+</div>
+<div class="mt-auto border-t border-outline-variant pt-4 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-highest transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="settings">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-highest transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="contact_support">contact_support</span>
+<span class="font-body-md text-body-md">Support</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-w-0 overflow-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface text-primary flex justify-between items-center w-full px-margin-desktop h-16 docked full-width top-0 border-b border-outline-variant flat no shadows shrink-0">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="font-headline-sm text-headline-sm font-medium text-on-surface flex items-center gap-2">
+<span class="text-on-surface-variant">Sequences</span>
+<span class="material-symbols-outlined text-sm text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Seq-Alpha-77X</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant text-[20px]">search</span>
+<input class="pl-10 pr-4 py-1.5 bg-surface-container-low border border-outline-variant rounded-full font-body-md text-body-md focus:outline-none focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed w-64 transition-all" placeholder="Search sequence..." type="text"/>
+</div>
+<button class="text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors opacity-80 duration-150">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors opacity-80 duration-150">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary-fixed overflow-hidden ml-2 border border-outline-variant">
+<img alt="Researcher Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjgbZvyTX_IWlomT9FWQmK2q9kPG2ULDOB7lnaNZN4DV5MZt5WQQNSMVEqIUBqyRPVUgQJF36YyQfcEn6rp5JMch8KBQTBmHFhtcpzlrAgNqBXmbq-J07Yqnw9E3W_UAW7EpXMycpV0fSo9-c_LFjyu7iLvJnrf7L8_pcL2V0jS5w_yC3MbyOw8l81drH0T8_jwfRvFpJXM68PJ2zVvHOr3OW6Zybxxo-s8x_3t4uz23_gaaCBXATjHjZdLpngBxQCiiz-HoWJuLU"/>
+</div>
+</div>
+</header>
+<!-- Main Workspace -->
+<main class="flex-1 overflow-y-auto p-margin-mobile md:p-margin-desktop bg-surface-bright grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-6">
+<!-- Left Column: Sequence & Variants (Spans 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Sequence Viewer Card -->
+<div class="bg-surface border border-outline-variant rounded-xl flex flex-col overflow-hidden shadow-sm">
+<div class="px-6 py-4 border-b border-outline-variant flex justify-between items-center bg-surface-container-lowest">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Nucleotide Sequence Viewer</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Region: Chr7:140,453,136-140,453,286 (BRAF)</p>
+</div>
+<div class="flex gap-2">
+<button class="p-1.5 text-on-surface-variant hover:bg-surface-container-high rounded border border-outline-variant">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:bg-surface-container-high rounded border border-outline-variant">
+<span class="material-symbols-outlined text-[18px]">zoom_out</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:bg-surface-container-high rounded border border-outline-variant ml-2">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+<div class="p-6 bg-[#f8fafc] flex-1 overflow-hidden flex flex-col relative">
+<!-- Legend -->
+<div class="flex gap-4 mb-4 font-label-caps text-label-caps">
+<div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm nucl-a"></span> Adenine (A)</div>
+<div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm nucl-t"></span> Thymine (T)</div>
+<div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm nucl-c"></span> Cytosine (C)</div>
+<div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm nucl-g"></span> Guanine (G)</div>
+</div>
+<!-- Sequence Track Container -->
+<div class="border border-outline-variant rounded-lg bg-surface-container-lowest overflow-x-auto seq-scroll p-4 font-data-mono text-data-mono">
+<!-- Track 1 -->
+<div class="flex mb-4 relative">
+<div class="w-16 shrink-0 text-outline pt-1">100</div>
+<div class="flex gap-1">
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-4"></span> <!-- gap -->
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm border-2 border-error text-error bg-error-container relative group cursor-pointer font-bold">T
+                                        <!-- Tooltip -->
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-32 bg-inverse-surface text-inverse-on-surface p-2 rounded shadow-lg text-xs hidden group-hover:block z-10 text-center">
+                                            Variant: V600E<br/>Quality: 99.8
+                                        </div>
+</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+</div>
+</div>
+<!-- Track 2 -->
+<div class="flex relative">
+<div class="w-16 shrink-0 text-outline pt-1">120</div>
+<div class="flex gap-1">
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-4"></span> <!-- gap -->
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-t font-bold">T</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-c font-bold">C</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-g font-bold">G</span>
+<span class="w-5 h-6 flex items-center justify-center rounded-sm nucl-a font-bold">A</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Variants Table -->
+<div class="bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<div class="px-6 py-4 border-b border-outline-variant bg-surface-container-lowest">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Detected Variants</h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b-2 border-primary bg-surface-container-low font-label-caps text-label-caps text-on-surface-variant">
+<th class="py-3 px-6">Position</th>
+<th class="py-3 px-6">Ref</th>
+<th class="py-3 px-6">Alt</th>
+<th class="py-3 px-6">Type</th>
+<th class="py-3 px-6">Quality</th>
+<th class="py-3 px-6">Action</th>
+</tr>
+</thead>
+<tbody class="font-data-mono text-data-mono">
+<tr class="border-b border-outline-variant hover:bg-surface-container-highest transition-colors bg-[#F1F5F9]">
+<td class="py-3 px-6">140,453,151</td>
+<td class="py-3 px-6"><span class="w-6 h-6 inline-flex items-center justify-center rounded-sm nucl-a">A</span></td>
+<td class="py-3 px-6"><span class="w-6 h-6 inline-flex items-center justify-center rounded-sm nucl-t">T</span></td>
+<td class="py-3 px-6"><span class="px-2 py-1 bg-error-container text-on-error-container rounded-full text-[10px] font-bold tracking-wider uppercase font-body-md">SNV</span></td>
+<td class="py-3 px-6 text-on-surface">99.8</td>
+<td class="py-3 px-6"><button class="text-primary hover:text-primary-container"><span class="material-symbols-outlined text-[18px]">visibility</span></button></td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface-container-highest transition-colors bg-surface-container-lowest">
+<td class="py-3 px-6">140,453,188</td>
+<td class="py-3 px-6"><span class="w-6 h-6 inline-flex items-center justify-center rounded-sm nucl-c">C</span></td>
+<td class="py-3 px-6"><span class="w-6 h-6 inline-flex items-center justify-center rounded-sm nucl-g">G</span></td>
+<td class="py-3 px-6"><span class="px-2 py-1 bg-surface-variant text-on-surface-variant rounded-full text-[10px] font-bold tracking-wider uppercase font-body-md">Silent</span></td>
+<td class="py-3 px-6 text-on-surface">85.4</td>
+<td class="py-3 px-6"><button class="text-primary hover:text-primary-container"><span class="material-symbols-outlined text-[18px]">visibility</span></button></td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface-container-highest transition-colors bg-[#F1F5F9]">
+<td class="py-3 px-6">140,453,210</td>
+<td class="py-3 px-6"><span class="w-6 h-6 inline-flex items-center justify-center rounded-sm nucl-g">G</span></td>
+<td class="py-3 px-6"><span class="w-6 h-6 inline-flex items-center justify-center rounded-sm nucl-t text-xs">-</span></td>
+<td class="py-3 px-6"><span class="px-2 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-[10px] font-bold tracking-wider uppercase font-body-md">Del</span></td>
+<td class="py-3 px-6 text-on-surface">92.1</td>
+<td class="py-3 px-6"><button class="text-primary hover:text-primary-container"><span class="material-symbols-outlined text-[18px]">visibility</span></button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Column: Metadata Sidebar (Spans 4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Sample Profile Card -->
+<div class="bg-surface border border-outline-variant rounded-xl p-6 shadow-sm">
+<div class="flex items-start justify-between mb-6">
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mb-1">Sample Profile</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Seq-Alpha-77X</h3>
+</div>
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-2 rounded-lg">biotech</span>
+</div>
+<div class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="border border-outline-variant p-3 rounded-lg bg-surface-container-low">
+<div class="font-label-caps text-label-caps text-outline mb-1">Status</div>
+<div class="font-data-mono text-data-mono flex items-center gap-2 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Validated
+                                </div>
+</div>
+<div class="border border-outline-variant p-3 rounded-lg bg-surface-container-low">
+<div class="font-label-caps text-label-caps text-outline mb-1">Quality Score</div>
+<div class="font-data-mono text-data-mono text-on-surface">Q30 (94%)</div>
+</div>
+</div>
+<div class="border-t border-outline-variant pt-4 mt-4">
+<dl class="space-y-3 font-body-md text-body-md">
+<div class="flex justify-between">
+<dt class="text-on-surface-variant">Patient ID</dt>
+<dd class="font-data-mono text-data-mono text-on-surface">PT-99201-A</dd>
+</div>
+<div class="flex justify-between">
+<dt class="text-on-surface-variant">Extraction Date</dt>
+<dd class="font-data-mono text-data-mono text-on-surface">Oct 24, 2023</dd>
+</div>
+<div class="flex justify-between">
+<dt class="text-on-surface-variant">Run ID</dt>
+<dd class="font-data-mono text-data-mono text-on-surface">ILL-Nova-004</dd>
+</div>
+<div class="flex justify-between">
+<dt class="text-on-surface-variant">Panel Type</dt>
+<dd class="font-data-mono text-data-mono text-on-surface">Solid Tumor V2</dd>
+</div>
+</dl>
+</div>
+<div class="pt-4 flex gap-2">
+<button class="flex-1 bg-primary text-on-primary py-2 px-4 rounded-lg font-body-md text-body-md font-medium hover:bg-surface-tint transition-colors text-center">
+                                Export Report
+                            </button>
+<button class="bg-surface text-on-surface border border-outline-variant py-2 px-4 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[20px] block">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quality Metrics Mini-Chart (Visual Placeholder) -->
+<div class="bg-surface border border-outline-variant rounded-xl p-6 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Coverage Depth</h4>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">bar_chart</span>
+</div>
+<div class="h-32 flex items-end gap-1 relative border-b border-l border-outline-variant pb-1 pl-1">
+<!-- Y-axis labels -->
+<div class="absolute -left-6 bottom-0 font-label-caps text-label-caps text-outline-variant text-[9px]">0x</div>
+<div class="absolute -left-8 top-0 font-label-caps text-label-caps text-outline-variant text-[9px]">500x</div>
+<!-- Bars -->
+<div class="flex-1 bg-secondary-fixed opacity-60 rounded-t-sm" style="height: 40%"></div>
+<div class="flex-1 bg-secondary-fixed opacity-80 rounded-t-sm" style="height: 60%"></div>
+<div class="flex-1 bg-secondary-fixed rounded-t-sm" style="height: 85%"></div>
+<div class="flex-1 bg-secondary-fixed rounded-t-sm" style="height: 90%"></div>
+<div class="flex-1 bg-secondary-fixed rounded-t-sm" style="height: 75%"></div>
+<div class="flex-1 bg-error-container rounded-t-sm" style="height: 15%"></div>
+<div class="flex-1 bg-secondary-fixed rounded-t-sm" style="height: 65%"></div>
+<div class="flex-1 bg-secondary-fixed rounded-t-sm" style="height: 80%"></div>
+<div class="flex-1 bg-secondary-fixed opacity-80 rounded-t-sm" style="height: 55%"></div>
+<div class="flex-1 bg-secondary-fixed opacity-60 rounded-t-sm" style="height: 30%"></div>
+</div>
+<div class="mt-2 text-center font-label-caps text-label-caps text-on-surface-variant">Mean Coverage: 384x</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

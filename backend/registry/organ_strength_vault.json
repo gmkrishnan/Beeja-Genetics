@@ -1,0 +1,305 @@
+{
+    "Fitness: Active Metabolism (BMI)": {
+        "findings": [
+            {
+                "organ": "Fitness: Active Metabolism (BMI)",
+                "why": "This gene is linked to BMI changes even in physically active people.",
+                "gene": "PRDX4P1 - THAP12P9",
+                "risk": "MODERATE",
+                "percentage": 65,
+                "plan_a": "Focus on high-intensity interval training (HIIT).",
+                "plan_b": "Consult a nutritionist for tailored diet.",
+                "evidence_link": "https://www.ncbi.nlm.nih.gov/snp/rs10938397",
+                "survival_tip": "Gene PRDX4P1 - THAP12P9 may affect your BMI even if you exercise."
+            }
+        ]
+    },
+    "Fitness: Sedentary Metabolism (BMI)": {
+        "findings": [
+            {
+                "organ": "Fitness: Sedentary Metabolism (BMI)",
+                "why": "This gene strongly influences BMI when physical activity is low.",
+                "gene": "RNU4-17P - MC4R",
+                "risk": "HIGH",
+                "percentage": 85,
+                "plan_a": "Increase daily step count to at least 10,000.",
+                "plan_b": "Reduce sedentary time.",
+                "evidence_link": "https://www.ncbi.nlm.nih.gov/snp/rs17782313",
+                "survival_tip": "Lack of exercise triggers the effect of gene RNU4-17P - MC4R on your weight."
+            }
+        ]
+    },
+    "Nutrition: Diet & Smoking Impact (BMI)": {
+        "findings": [
+            {
+                "organ": "Nutrition: Diet & Smoking Impact (BMI)",
+                "why": "This gene interacts with lifestyle factors like smoking to affect BMI.",
+                "gene": "RPTOR",
+                "risk": "MODERATE",
+                "percentage": 72,
+                "plan_a": "Avoid smoking and maintain a clean diet.",
+                "plan_b": "Regular health checkups.",
+                "evidence_link": "https://www.ncbi.nlm.nih.gov/snp/rs12940622",
+                "survival_tip": "Gene RPTOR affects BMI, especially when combined with other habits."
+            }
+        ]
+    },
+    "Nutrition: Carbohydrate intake": {
+        "findings": [
+            {
+                "organ": "Nutrition: Carbohydrate intake",
+                "why": "This gene affects how your body processes carbohydrates and insulin sensitivity.",
+                "gene": "TCF7L2",
+                "risk": "HIGH",
+                "percentage": 80,
+                "plan_a": "Limit simple carbs and focus on complex carbs.",
+                "plan_b": "Monitor blood glucose levels.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Gene TCF7L2 strongly influences carb metabolism. Watch your intake."
+            }
+        ]
+    },
+    "Nutrition: Vitamin D levels": {
+        "findings": [
+            {
+                "organ": "Nutrition: Vitamin D levels",
+                "why": "This gene affects the transport and binding of Vitamin D in your blood.",
+                "gene": "GC",
+                "risk": "MODERATE",
+                "percentage": 60,
+                "plan_a": "Increase sun exposure safely.",
+                "plan_b": "Consider Vitamin D3 supplementation.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "You may have a genetic predisposition to lower Vitamin D levels."
+            }
+        ]
+    },
+    "Hearing: Age-related hearing impairment": {
+        "findings": [
+            {
+                "organ": "Hearing: Age-related hearing impairment",
+                "why": "This gene is associated with a higher risk of developing hearing loss with age.",
+                "gene": "GJB2",
+                "risk": "MODERATE",
+                "percentage": 58,
+                "plan_a": "Avoid excessive loud noise exposure.",
+                "plan_b": "Annual audiogram checkups.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Protect your ears from loud noises to preserve hearing longer."
+            }
+        ]
+    },
+    "Hearing: Noise-induced hearing loss": {
+        "findings": [
+            {
+                "organ": "Hearing: Noise-induced hearing loss",
+                "why": "This gene makes the inner ear more sensitive to damage from loud sounds.",
+                "gene": "ACTG1",
+                "risk": "TYPICAL",
+                "percentage": 42,
+                "plan_a": "Use earplugs in loud environments.",
+                "plan_b": "Maintain ear health.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline risk is typical, but protection is always recommended."
+            }
+        ]
+    },
+    "Organ Health: Liver enzyme levels (ALT/AST)": {
+        "findings": [
+            {
+                "organ": "Organ Health: Liver enzyme levels (ALT/AST)",
+                "why": "This gene influences baseline liver enzyme levels, reflecting liver stress.",
+                "gene": "PNPLA3",
+                "risk": "HIGH",
+                "percentage": 82,
+                "plan_a": "Limit alcohol consumption and processed sugars.",
+                "plan_b": "Milk thistle supplementation after doctor consultation.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Gene PNPLA3 is linked to fatty liver risk. Keep a clean diet."
+            }
+        ]
+    },
+    "Organ Health: Chronic kidney disease risk": {
+        "findings": [
+            {
+                "organ": "Organ Health: Chronic kidney disease risk",
+                "why": "This gene is linked to the filtration capacity of the kidneys over time.",
+                "gene": "SHROOM3",
+                "risk": "MODERATE",
+                "percentage": 64,
+                "plan_a": "Maintain healthy blood pressure and hydration.",
+                "plan_b": "Regular kidney function tests (eGFR).",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Hydration is key to supporting your kidneys with this genetic profile."
+            }
+        ]
+    },
+    "Hypothyroidism Sensitivity": {
+        "findings": [
+            {
+                "organ": "Hypothyroidism Sensitivity",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Hypothyroidism Sensitivity appears normal."
+            }
+        ]
+    },
+    "Hypothyroidism Response": {
+        "findings": [
+            {
+                "organ": "Hypothyroidism Response",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Hypothyroidism Response appears normal."
+            }
+        ]
+    },
+    "Hdl Cholesterol Levels Sensitivity": {
+        "findings": [
+            {
+                "organ": "Hdl Cholesterol Levels Sensitivity",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Hdl Cholesterol Levels Sensitivity appears normal."
+            }
+        ]
+    },
+    "Hdl Cholesterol Levels Response": {
+        "findings": [
+            {
+                "organ": "Hdl Cholesterol Levels Response",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Hdl Cholesterol Levels Response appears normal."
+            }
+        ]
+    },
+    "C-Reactive Protein Levels Sensitivity": {
+        "findings": [
+            {
+                "organ": "C-Reactive Protein Levels Sensitivity",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for C-Reactive Protein Levels Sensitivity appears normal."
+            }
+        ]
+    },
+    "C-Reactive Protein Levels Response": {
+        "findings": [
+            {
+                "organ": "C-Reactive Protein Levels Response",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for C-Reactive Protein Levels Response appears normal."
+            }
+        ]
+    },
+    "Hip Circumference Adjusted For Bmi Sensitivity": {
+        "findings": [
+            {
+                "organ": "Hip Circumference Adjusted For Bmi Sensitivity",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Hip Circumference Adjusted For Bmi Sensitivity appears normal."
+            }
+        ]
+    },
+    "Hip Circumference Adjusted For Bmi Response": {
+        "findings": [
+            {
+                "organ": "Hip Circumference Adjusted For Bmi Response",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Hip Circumference Adjusted For Bmi Response appears normal."
+            }
+        ]
+    },
+    "Waist Circumference Adjusted For Body Mass Index Sensitivity": {
+        "findings": [
+            {
+                "organ": "Waist Circumference Adjusted For Body Mass Index Sensitivity",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Waist Circumference Adjusted For Body Mass Index Sensitivity appears normal."
+            }
+        ]
+    },
+    "Waist Circumference Adjusted For Body Mass Index Response": {
+        "findings": [
+            {
+                "organ": "Waist Circumference Adjusted For Body Mass Index Response",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Waist Circumference Adjusted For Body Mass Index Response appears normal."
+            }
+        ]
+    },
+    "Waist-Hip Index Sensitivity": {
+        "findings": [
+            {
+                "organ": "Waist-Hip Index Sensitivity",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Waist-Hip Index Sensitivity appears normal."
+            }
+        ]
+    },
+    "Waist-Hip Index Response": {
+        "findings": [
+            {
+                "organ": "Waist-Hip Index Response",
+                "why": "AI completed research. No critical high-risk markers found in literature.",
+                "gene": "Polygenic",
+                "risk": "TYPICAL",
+                "plan_a": "Maintain standard healthy lifestyle.",
+                "plan_b": "No acute mitigation needed.",
+                "evidence_link": "https://pubmed.ncbi.nlm.nih.gov/",
+                "survival_tip": "Your baseline genetic risk for Waist-Hip Index Response appears normal."
+            }
+        ]
+    }
+}
