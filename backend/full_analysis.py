@@ -142,7 +142,7 @@ async def run_analysis():
         safe_print("Step 7: Running Agent for Custom Category 'Organ Strength'...")
         from core.agent import run_agent_loop
         agent_goal = "Analyze my genetic Organ Strength for Liver and Kidney. Research PubMed if needed, scan my DNA, and save the discovery."
-        agent_result = await run_agent_loop(agent_goal)
+        agent_result = await run_agent_loop(agent_goal, dna_path=dna_file)
 
         # Step 8: Save the Report
         output_path = os.path.join(os.path.dirname(__file__), "James_Jones_Fast_Report.md")

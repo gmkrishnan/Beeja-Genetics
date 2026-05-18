@@ -13,6 +13,8 @@ from snps import SNPs
 
 
 DNA_FILE_PATH = r"D:\Building\beeja\Beeja_Genetic\raw_data\genome_James_Jones_v5_Full_20230726173828\genome_James_Jones_v5_Full_20230726173828.txt"
+if not os.path.exists(DNA_FILE_PATH):
+    DNA_FILE_PATH = "simulated_james_jones_dna.txt"
 
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'registry', 'clinical_vault.db')
 VAULT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'registry', 'organ_strength_vault.json')
