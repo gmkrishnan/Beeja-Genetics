@@ -8,6 +8,7 @@ venv/
 # Data (Protecting large DNA samples)
 raw_data/
 *.txt
+!requirements.txt
 *.vcf
 
 # Database
